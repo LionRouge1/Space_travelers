@@ -1,13 +1,13 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Rocket from './components/rocket/rocket'
+import RocketList from './components/rocket/rocketList';
 
 const App = () => (
   <div>
     <Router>
       <Routes>
-        <Route path='/' index element={<Rocket />} />
+        <Route path='/' index element={<RocketList />} />
       </Routes>
     </Router>
   </div>

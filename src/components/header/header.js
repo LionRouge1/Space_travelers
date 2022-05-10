@@ -7,7 +7,7 @@ const Header = () => {
   const data = [{
     id: 1,
     name: 'Rocket',
-    url: '/rocket',
+    url: '/',
   },
   {
     id: 2,
