@@ -36,8 +36,8 @@ const Header = () => {
         {
             data.map(({ id, name, url }) => (
         
-              <li className='navlinks'>
-                <NavLink key={id} to={url}>
+              <li key={id} className='navlinks'>
+                <NavLink to={url}>
                   { name }
                 </NavLink>
               </li>
