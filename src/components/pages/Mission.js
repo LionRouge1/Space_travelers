@@ -1,4 +1,5 @@
 import { Component } from "react";
+import GetMission from "../GetMission";
 
 class Mission extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class Mission extends Component {
   render() {
     return (
       <div className="mission">
-        <h1>Mission page</h1>
+        <GetMission />
       </div>
     )
   }
