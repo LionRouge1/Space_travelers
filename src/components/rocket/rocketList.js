@@ -15,7 +15,6 @@ const RocketList = () => {
 
   return (
     <>
-    <Header />
       <div className='rocketListContainer'>
         {rockets.map((rocket) => (
           <Rocket
