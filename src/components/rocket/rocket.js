@@ -1,9 +1,8 @@
 import React from 'react';
-import Header from '../header/header';
 
 const Rocket = () => (
   <div className='rocket'>
-    <Header />
+    <h1>Rocket page</h1>
   </div>
 );
 

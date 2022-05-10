@@ -2,12 +2,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import planet1 from './planet1.png';
+import '../../style/header.css';
 
 const Header = () => {
   const data = [{
     id: 1,
     name: 'Rocket',
-    url: '/rocket',
+    url: '/',
   },
   {
     id: 2,
@@ -26,32 +27,25 @@ const Header = () => {
 },
   ];
   return (
-    <header className='header'>
-    <div>
-    <img className='logo' src={planet1} alt="planet logo" />
-    </div>
-      <h1>
-        
-        Space Travelers Hub
-       
-      </h1>
-      
-      <ul className='nav'>
+    <nav className='header'>
+      <div className='title_container'>
+        <img className='logo' src={planet1} alt="planet logo" />
+        <h1>Space Travelers Hub</h1>
+      </div>
+      <ul>
         {
             data.map(({ id, name, url }) => (
-              <NavLink
-                key={id}
-                to={url}
-              >
-                <li className='navlinks'>
+        
+              <li className='navlinks'>
+                <NavLink key={id} to={url}>
                   { name }
-
-                </li>
-              </NavLink>
+                </NavLink>
+              </li>
+             
             ))
         }
       </ul>
-    </header>
+    </nav>
   );
 };
 
