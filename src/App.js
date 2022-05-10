@@ -1,8 +1,8 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RocketList from './components/rocket/rocketList';
 import Header from './components/header/header';
-import Rocket from './components/rocket/rocket';
 import MyProfile from './components/pages/MyProfile';
 import Mission from './components/pages/Mission';
 
@@ -10,7 +10,7 @@ const App = () => (
   <>
     <Header />
     <Routes>
-      <Route path='/' index element={<Rocket />} />
+      <Route path='/' index element={<RocketList />} />
       <Route path='/profile' element={<MyProfile />} />
       <Route path='/missions' element={<Mission />} />
     </Routes>

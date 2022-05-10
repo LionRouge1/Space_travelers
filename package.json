@@ -1,25 +1,32 @@
 {
-    "name": "space",
+    "name": "space_travelers",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@testing-library/jest-dom": "^5.16.4",
-        "@testing-library/react": "^13.2.0",
+        "@testing-library/jest-dom": "^5.16.2",
+        "@testing-library/react": "^12.1.4",
         "@testing-library/user-event": "^13.5.0",
-        "babel-preset-react": "^6.24.1",
+        "axios": "^0.26.1",
+        "dotenv": "^16.0.0",
+        "gh-pages": "^3.2.3",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
-        "react-redux": "^8.0.1",
-        "react-router-dom": "^6.3.0",
-        "react-scripts": "5.0.1",
-        "redux-logger": "^3.0.6",
+        "react-icons": "^4.3.1",
+        "react-redux": "^7.2.6",
+        "react-router-dom": "^6.2.2",
+        "react-scripts": "5.0.0",
+        "redux": "^4.1.2",
+        "redux-thunk": "^2.4.1",
+        "uuid": "^8.3.2",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -b deploy -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -27,17 +34,35 @@
             "react-app/jest"
         ]
     },
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-    ],
-    "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
-    ],
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
     "devDependencies": {
-        "@babel/plugin-proposal-class-properties": "^7.16.7"
+        "@babel/core": "^7.17.5",
+        "@babel/eslint-parser": "^7.17.0",
+        "@babel/plugin-syntax-jsx": "^7.16.7",
+        "@babel/preset-react": "^7.16.7",
+        "autoprefixer": "^10.4.2",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-react": "^1.1.7",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.29.4",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "postcss": "^8.4.8",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^21.0.0",
+        "stylelint-csstree-validator": "^1.9.0",
+        "stylelint-scss": "^3.21.0"
     }
 }

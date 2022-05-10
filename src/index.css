@@ -1,0 +1,46 @@
+.rocketCardContainer {
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ gap: 20px;
+ padding: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.rocketDescription {
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+ gap: 10px;
+ font-size: 1.1rem;
+}
+
+.rocketImg {
+ width: 400px;
+ height: auto;
+}
+
+.reserveRocket {
+ width: fit-content;
+ padding: 8px;
+ background-color: blueviolet;
+ color: white;
+ font-size: 1.2rem;
+}
+
+.cancelReserve {
+ background-color: rgb(230, 230, 230);
+ color: blueviolet;
+ font-size: 1.2rem;
+ width: fit-content;
+ padding: 8px;
+}
+
+.reserved {
+ background-color: rgb(81, 130, 81);
+ color: white;
+ letter-spacing: 1px;
+ padding-block: 3px;
+ margin-block-end: 4px;
+ border-radius: 5px;
+}
