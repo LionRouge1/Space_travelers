@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #121212;;
 }
 
 :root {
   --grey-bd: #ddd;
+  --black-two: #121212;
 }
 
 .rocketCardContainer {

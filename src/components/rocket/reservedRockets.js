@@ -6,15 +6,15 @@ const ReservedRockets = () => {
 
   return (
     <>
-      <div className="reservedRocketContainer">
+      <div className="reservedRocket">
         <h2 className="heading">Reserved Rockets</h2>
-        <ul className="reservedRockets">
+        <ol className="reservedRockets">
           {rockets.map((rocket) => (
-            <li key={rocket.id} className="reservedRocket">
+            <li key={rocket.id}>
               {rocket.name}
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </>
   );

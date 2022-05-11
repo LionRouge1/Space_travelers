@@ -11,7 +11,7 @@ const JoinMission = () => {
   return (
     <div className="joined">
       <h2 className="heading">Joined Missions</h2>
-      <ul>
+      <ol>
         {
           joined.map(({ missionId, missionName }) => (
             <li key={missionId}>
@@ -19,7 +19,7 @@ const JoinMission = () => {
             </li>
           ))
         }
-      </ul>
+      </ol>
     </div>
   );
 };

@@ -2,14 +2,13 @@
 import React from 'react';
 import JoinMission from '../mission/JoinMission';
 import ReservedRockets from '../rocket/reservedRockets';
+import '../../style/profile.css';
 
 const MyProfile = () => (
-  <>
-    <main className='profile'>
-      <ReservedRockets />
-      <JoinMission />
-    </main>
-  </>
+  <div className='profile'>
+    <ReservedRockets />
+    <JoinMission />
+  </div>
 );
 
 export default MyProfile;
