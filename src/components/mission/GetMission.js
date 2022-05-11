@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { joinMission } from '../../redux/actions/mission';
 import InsertMission from './InsertMission';
+import '../../style/GetMission.css';
 
 const GetMission = () => {
   const missions = useSelector((state) => state.missions.Missions);
@@ -12,7 +13,7 @@ const GetMission = () => {
   };
 
   return (
-    <div>
+    <div className="mission_container">
       <table>
         <thead>
           <tr>

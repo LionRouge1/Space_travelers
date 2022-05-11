@@ -12,7 +12,7 @@ const InsertMission = ({
     color: 'white',
   };
   const notMenber = {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ccc',
     color: 'white',
   };
   const Bmember = {
@@ -27,7 +27,7 @@ const InsertMission = ({
   };
   return (
     <tr>
-      <td>{missionName}</td>
+      <th>{missionName}</th>
       <td>{description}</td>
       <td>
         <span
