@@ -82,6 +82,9 @@ body {
  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
  border-radius: 20px;
 }
+.rocketCardContainer:hover {
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
 .rocketDescription {
  display: flex;
@@ -120,43 +123,6 @@ body {
  padding-block: 3px;
  margin-block-end: 4px;
  border-radius: 5px;
-}
-
-.reservedRocketContainer:hover {
- box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.heading {
- color: white;
- text-align: center;
- font-size: 1.5rem;
- padding: 30px 0;
- width: 100%;
- border-top-left-radius: 10px;
- border-top-right-radius: 10px;
- background-color: blueviolet;
-}
-
-.reservedRockets {
- width: 100%;
- color: #3d3d3d;
-}
-
-.reservedRockets li {
- list-style: none;
- text-align: center;
- padding: 20px;
- font-size: 1.2rem;
- border-top: gray 1px solid;
-}
-
-.reservedRockets li:nth-child(even) {
- background-color: rgb(186, 145, 226);
- color: white;
-}
-.myProfile {
- border-left: 1px solid black;
- padding-left: 10px;
 }
 
 @media only screen and (max-width: 800px) {
