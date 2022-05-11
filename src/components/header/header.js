@@ -15,13 +15,8 @@ const Header = () => {
     name: 'Missions',
     url: '/missions',
   },
-  {
-   id: 3,
-   name: 'Dragon',
-   url: '/dragon',
- },
  {
-  id: 4,
+  id: 3,
   name: 'My Profile',
   url: '/profile',
 },
