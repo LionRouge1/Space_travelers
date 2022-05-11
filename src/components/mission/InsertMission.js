@@ -30,10 +30,11 @@ const InsertMission = ({
       <td>{missionName}</td>
       <td>{description}</td>
       <td>
-        <span
+        <span 
+          data-testid="message"
           style={(status)? member : notMenber}
         >
-          {(status)? 'Active menber' : 'NOT A MEMBER'}
+          {(status)? 'Active member' : 'NOT A MEMBER'}
         </span>
       </td>
       <td>
