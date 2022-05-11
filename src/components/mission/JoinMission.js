@@ -7,9 +7,10 @@ const JoinMission = () => {
   useEffect(() => {
     dispatch(displayJoined())
   }, [dispatch]);
-  const joined = useSelector((state) => state.missions.Missions);
+  const joined = useSelector((state) => state.missions.Profile);
   return (
     <div className="joined">
+      <h2 className='heading'>Joined Missions</h2>
       <ul>
         {
           joined.map(({mission_id: missionId, mission_name: missionName}) => (

@@ -4,6 +4,7 @@ const DISPLAY_MISSION_JOINED = 'src/redux/mission/DISPLAY_MISSION_JOINED';
 const link = 'https://api.spacexdata.com/v3/missions';
 const initialState = {
   Missions: [],
+  Profile: [],
 };
 
 export const fetchMissionSuceed = (missions) => ({
@@ -49,7 +50,7 @@ const missionReducer = (state = initialState, action) => {
     case DISPLAY_MISSION_JOINED:
       return {
         ...state,
-        Missions: [ ...state.Missions.filter((mission) => mission.status === true) ],
+        Profile: [ ...state.Missions.filter((mission) => mission.status === true) ],
       }
 
     default:

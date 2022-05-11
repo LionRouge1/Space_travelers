@@ -7,10 +7,6 @@ const GetMission = () => {
   const missions  = useSelector((state) => state.missions.Missions);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchMission());
-  }, [dispatch]);
-
   const handleClick = (e) => {
     dispatch(joinMission(e.target.id));
   }
