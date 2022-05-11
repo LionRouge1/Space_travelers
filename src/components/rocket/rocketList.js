@@ -20,10 +20,9 @@ const RocketList = () => {
     );
   }
 
-
   return (
     <>
-      <div className='rocketListContainer'>
+      <div className="rocketListContainer">
         {rockets.list.map((rocket) => (
           <Rocket
             key={rocket.id}

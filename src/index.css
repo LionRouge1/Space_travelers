@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,100;1,600&display=swap');
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #121212;
+}
+
+:root {
+  --grey-bd: #ddd;
+  --black-two: #121212;
 }
 
 body {
@@ -14,127 +22,96 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
 }
-.header {
- display: flex;
- align-items: center;
- padding: 5px;
- border-bottom: 1px solid black;
- position: fixed;
- top: 0;
- justify-content: center;
- column-gap: 28%;
- background-color: white;
- width: 100%;
-}
 
 .title_container {
- display: flex;
- gap: 15px;
- justify-content: center;
- align-items: center;
- color: #4d4d4d;
-}
-
-.logo {
- width: 80px;
- height: 50px;
-}
-
-.navBar {
- display: flex;
- gap: 20px;
-}
-
-.navlinks {
- list-style: none;
- font-size: 20px;
- margin-right: 10px;
-}
-
-.navlinks a {
- text-decoration: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
 }
 
 .myLogo {
- font-size: 3rem;
- color: #4d4d4d;
- cursor: pointer;
- background-color: transparent;
- border: none;
- position: fixed;
- right: 10px;
- top: 25px;
- z-index: 10;
+  font-size: 3rem;
+  color: #4d4d4d;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 10px;
+  top: 25px;
+  z-index: 10;
 }
-.rocketListContainer{
- margin-top: 150px;
+
+.rocketListContainer {
+  margin-top: 150px;
 }
+
 .rocketCardContainer {
- display: flex;
- align-items: center;
- flex-direction: row;
- gap: 20px;
- padding: 20px;
- margin: 20px;
- height: fit-content;
- transition: 0.3s;
- font-family: Arial, Helvetica, sans-serif;
- box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
- border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  height: inherit;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
+
 .rocketCardContainer:hover {
- box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .rocketDescription {
- display: flex;
- flex-direction: column;
- padding: 10px;
- gap: 10px;
- font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  font-size: 1.1rem;
 }
 
 .rocketImg {
- width: 400px;
- height: auto;
+  width: 400px;
+  height: auto;
 }
 
 .reserveRocket {
- width: fit-content;
- padding: 8px;
- background-color: blueviolet;
- color: white;
- font-size: 1.2rem;
- border-radius: 10px;
+  width: fit-content;
+  padding: 8px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
 }
 
 .cancelReserve {
- background-color: rgb(230, 230, 230);
- color: blueviolet;
- font-size: 1.2rem;
- width: fit-content;
- padding: 8px;
+  background-color: rgb(230, 230, 230);
+  color: blueviolet;
+  font-size: 1.2rem;
+  width: fit-content;
+  padding: 8px;
 }
 
 .reserved {
- background-color: rgb(81, 130, 81);
- color: white;
- letter-spacing: 1px;
- padding-block: 3px;
- margin-block-end: 4px;
- border-radius: 5px;
+  background-color: rgb(81, 130, 81);
+  color: white;
+  letter-spacing: 1px;
+  padding-block: 3px;
+  margin-block-end: 4px;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 800px) {
- .rocketImg img {
-   object-fit: cover;
-   height: 100%;
-   width: 100%;
- }
- .rocketImg{
-  width: 100%;
- }
- .rocketCardContainer {
-   flex-direction: column;
- }
+  .rocketImg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .rocketImg {
+    width: 100%;
+  }
 }

@@ -1,34 +1,37 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { joinMission } from "../../redux/actions/mission";
-import InsertMission from "./InsertMission";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { joinMission } from '../../redux/actions/mission';
+import InsertMission from './InsertMission';
+import '../../style/GetMission.css';
 
 const GetMission = () => {
-  const missions  = useSelector((state) => state.missions.Missions);
+  const missions = useSelector((state) => state.missions.Missions);
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
     dispatch(joinMission(e.target.id));
-  }
-  
+  };
+
   return (
-    <div>
+    <div className="mission_container">
       <table>
         <thead>
           <tr>
             <th>Mission</th>
             <th>description</th>
             <th>Status</th>
-            <th></th>
+            <th> </th>
           </tr>
         </thead>
         <tbody>
           {
-            missions.map(({mission_id, mission_name, description, status}) => (
+            missions.map(({
+              missionId, missionName, description, status,
+            }) => (
               <InsertMission
-                key={mission_id}
-                missionId={mission_id}
-                missionName={mission_name}
+                key={missionId}
+                missionId={missionId}
+                missionName={missionName}
                 description={description}
                 status={status}
                 handleClick={handleClick}
@@ -38,7 +41,7 @@ const GetMission = () => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
 export default GetMission;

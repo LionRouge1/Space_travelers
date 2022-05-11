@@ -10,45 +10,45 @@ const InsertMission = ({
   const member = {
     backgroundColor: 'green',
     color: 'white',
-  }
+  };
   const notMenber = {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ccc',
     color: 'white',
-  }
+  };
   const Bmember = {
     backgroundColor: 'none',
     border: '1px solid red',
     color: 'red',
-  }
+  };
   const BnotMenber = {
     backgroundColor: 'none',
     border: '1px solid #ccc',
     color: '#ccc',
-  }
+  };
   return (
     <tr>
-      <td>{missionName}</td>
+      <th>{missionName}</th>
       <td>{description}</td>
       <td>
-        <span 
+        <span
           data-testid="message"
-          style={(status)? member : notMenber}
+          style={(status) ? member : notMenber}
         >
-          {(status)? 'Active member' : 'NOT A MEMBER'}
+          {(status) ? 'Active member' : 'NOT A MEMBER'}
         </span>
       </td>
       <td>
         <button
           id={missionId}
           type="button"
-          style={(status)? Bmember : BnotMenber}
+          style={(status) ? Bmember : BnotMenber}
           onClick={(e) => handleClick(e)}
         >
-          {(status)? 'Leave Mission' : 'Join Mission'}
+          {(status) ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
-  </tr>
-  )
+    </tr>
+  );
 };
 
 export default InsertMission;
