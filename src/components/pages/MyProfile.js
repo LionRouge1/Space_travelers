@@ -1,18 +1,13 @@
-import { Component } from "react";
+/* eslint-disable jsx-quotes */
+import React from 'react';
+import ReservedRockets from '../rocket/reservedRockets';
 
-class MyProfile extends Component {
-  constructor(props) {
-    super(props);
-    this.state= {};
-  }
-
-  render() {
-    return (
-      <div className="myprofile">
-        <h1>My Profile page</h1>
-      </div>
-    )
-  }
-}
+const MyProfile = () => (
+  <>
+    <main className='profile'>
+      <ReservedRockets />
+    </main>
+  </>
+);
 
 export default MyProfile;
