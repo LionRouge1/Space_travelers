@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { displayRockets } from '../../redux/actions/rocket';
-import Header from '../header/header';
 import Rocket from './rocket';
 
 const RocketList = () => {

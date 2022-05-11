@@ -32,7 +32,7 @@ const Header = () => {
         <img className='logo' src={planet1} alt="planet logo" />
         <h1>Space Travelers Hub</h1>
       </div>
-      <ul>
+      <ul className='navBar'>
         {
             data.map(({ id, name, url }) => (
         

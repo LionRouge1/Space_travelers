@@ -1,10 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,100;1,600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.header {
+ display: flex;
+ align-items: center;
+ padding: 5px;
+ border-bottom: 1px solid black;
+ position: fixed;
+ top: 0;
+ justify-content: center;
+ column-gap: 28%;
+ background-color: white;
+ width: 100%;
+}
+
+.title_container {
+ display: flex;
+ gap: 15px;
+ justify-content: center;
+ align-items: center;
+ color: #4d4d4d;
+}
+
+.logo {
+ width: 80px;
+ height: 50px;
+}
+
+.navBar {
+ display: flex;
+ gap: 20px;
+}
+
+.navlinks {
+ list-style: none;
+ font-size: 20px;
+ margin-right: 10px;
+}
+
+.navlinks a {
+ text-decoration: none;
+}
+
+.myLogo {
+ font-size: 3rem;
+ color: #4d4d4d;
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ position: fixed;
+ right: 10px;
+ top: 25px;
+ z-index: 10;
+}
+.rocketListContainer{
+ margin-top: 150px;
+}
 .rocketCardContainer {
  display: flex;
  align-items: center;
  flex-direction: row;
  gap: 20px;
  padding: 20px;
+ margin: 20px;
+ height: fit-content;
+ transition: 0.3s;
  font-family: Arial, Helvetica, sans-serif;
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+ border-radius: 20px;
 }
 
 .rocketDescription {
@@ -26,6 +102,7 @@
  background-color: blueviolet;
  color: white;
  font-size: 1.2rem;
+ border-radius: 10px;
 }
 
 .cancelReserve {
@@ -43,4 +120,69 @@
  padding-block: 3px;
  margin-block-end: 4px;
  border-radius: 5px;
+}
+
+.reservedRocketContainer:hover {
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+ color: white;
+ text-align: center;
+ font-size: 1.5rem;
+ padding: 30px 0;
+ width: 100%;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ background-color: blueviolet;
+}
+
+.reservedRockets {
+ width: 100%;
+ color: #3d3d3d;
+}
+
+.reservedRockets li {
+ list-style: none;
+ text-align: center;
+ padding: 20px;
+ font-size: 1.2rem;
+ border-top: gray 1px solid;
+}
+
+.reservedRockets li:nth-child(even) {
+ background-color: rgb(186, 145, 226);
+ color: white;
+}
+.myProfile {
+ border-left: 1px solid black;
+ padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+ .rocketImg {
+   width: 25rem;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   background-color: red;
+ }
+
+ .rocketImg img {
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+ }
+
+ .rocketCardContainer {
+   flex-direction: column;
+   display: flex;
+   background-color: red;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+ .btn {
+   width: 7rem;
+ }
 }
