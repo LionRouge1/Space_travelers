@@ -1,19 +1,19 @@
-import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { displayJoined } from "../../redux/actions/mission";
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { displayJoined } from '../../redux/actions/mission';
 
 const JoinMission = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(displayJoined())
+    dispatch(displayJoined());
   }, [dispatch]);
   const joined = useSelector((state) => state.missions.Profile);
   return (
     <div className="joined">
-      <h2 className='heading'>Joined Missions</h2>
+      <h2 className="heading">Joined Missions</h2>
       <ul>
         {
-          joined.map(({mission_id: missionId, mission_name: missionName}) => (
+          joined.map(({ missionId, missionName }) => (
             <li key={missionId}>
               {missionName}
             </li>
@@ -21,7 +21,7 @@ const JoinMission = () => {
         }
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default JoinMission;

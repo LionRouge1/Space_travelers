@@ -13,11 +13,10 @@ const rootReducer = combineReducers({
   rockets: RocketReducer,
 });
 
-
 const store = createStore(
   rootReducer,
   compose(
-      applyMiddleware(thunk),
+    applyMiddleware(thunk),
   ),
 );
 

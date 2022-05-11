@@ -15,11 +15,11 @@ const Header = () => {
     name: 'Missions',
     url: '/missions',
   },
- {
-  id: 3,
-  name: 'My Profile',
-  url: '/profile',
-},
+  {
+    id: 3,
+    name: 'My Profile',
+    url: '/profile',
+  },
   ];
   return (
     <nav className='header'>
@@ -30,13 +30,13 @@ const Header = () => {
       <ul>
         {
             data.map(({ id, name, url }) => (
-        
+
               <li key={id} className='navlinks'>
                 <NavLink to={url}>
                   { name }
                 </NavLink>
               </li>
-             
+
             ))
         }
       </ul>

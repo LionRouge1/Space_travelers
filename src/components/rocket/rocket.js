@@ -21,7 +21,7 @@ const Rocket = (props) => {
   const cancelBtn = (
     <button
       type="button"
-      className='cancelReserve'
+      className="cancelReserve"
       onClick={cancelHandler}
     >
       Cancel Reservation
@@ -31,7 +31,7 @@ const Rocket = (props) => {
   const reserveBtn = (
     <button
       type="button"
-      className='reserveRocket'
+      className="reserveRocket"
       onClick={reserveHandler}
     >
       Reserve Rocket
@@ -40,14 +40,14 @@ const Rocket = (props) => {
 
   return (
     <>
-      <div className='rocketCardContainer'>
+      <div className="rocketCardContainer">
         <div>
-          <img src={image} alt="rocket" className='rocketImg' />
+          <img src={image} alt="rocket" className="rocketImg" />
         </div>
-        <div className='rocketDescription'>
+        <div className="rocketDescription">
           <h2>{name}</h2>
           <p>
-            <span className='reserved'>
+            <span className="reserved">
               {reserved ? 'Reserved' : ''}
             </span>
             {description}

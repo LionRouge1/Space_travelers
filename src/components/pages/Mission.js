@@ -1,10 +1,10 @@
-import { Component } from "react";
-import GetMission from "../mission/GetMission";
+import { Component } from 'react';
+import GetMission from '../mission/GetMission';
 
 class Mission extends Component {
   constructor(props) {
     super(props);
-    this.state= {};
+    this.state = {};
   }
 
   render() {
@@ -12,7 +12,7 @@ class Mission extends Component {
       <div className="mission">
         <GetMission />
       </div>
-    )
+    );
   }
 }
 
