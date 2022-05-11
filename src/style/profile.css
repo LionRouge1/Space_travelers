@@ -1,34 +1,60 @@
+.reserveRocket,
+.joined ul {
+  width: fit-content;
+  padding: 8px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
 .profile {
-  margin: 100px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.reservedRocket,
+.reservedRocketContainer,
 .joined {
-  display: inline-block;
-  width: 40%;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
-  margin: 20px 40px;
+  width: 30rem;
+  border-radius: 10px;
+  height: inherit;
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.reservedRocketContainer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  color: white;
   text-align: center;
-  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 30px 0;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: blueviolet;
 }
 
-.profile h2 {
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 2px;
-  padding: 3px;
-  margin: 10px;
+.reservedRockets,
+.joined ul {
+  width: 100%;
+  color: #3d3d3d;
 }
 
-.profile ul {
-  margin-top: 20px;
+.reservedRockets li,
+.joined li {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-top: gray 1px solid;
 }
 
-.profile li {
-  height: 40px;
-  text-align: left;
-  list-style: ro;
-  border-bottom: 1px solid var(--grey-bd);
-  padding: 10px 20px;
-  color: darkslategrey;
+.reservedRockets li:nth-child(even),
+.joined li:nth-child(even) {
+  background-color: rgb(186, 145, 226);
+  color: white;
 }

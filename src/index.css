@@ -5,23 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #121212;;
+  color: #121212;
 }
 
 :root {
   --grey-bd: #ddd;
   --black-two: #121212;
 }
-
-.rocketCardContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 
 body {
   padding: 0;
@@ -34,62 +24,45 @@ body {
 }
 
 .title_container {
- display: flex;
- gap: 15px;
- justify-content: center;
- align-items: center;
- color: #4d4d4d;
-}
-
-.logo {
- width: 80px;
- height: 50px;
-}
-
-.navBar {
- display: flex;
- gap: 20px;
-}
-
-.navlinks {
- list-style: none;
- font-size: 20px;
- margin-right: 10px;
-}
-
-.navlinks a {
- text-decoration: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
 }
 
 .myLogo {
- font-size: 3rem;
- color: #4d4d4d;
- cursor: pointer;
- background-color: transparent;
- border: none;
- position: fixed;
- right: 10px;
- top: 25px;
- z-index: 10;
+  font-size: 3rem;
+  color: #4d4d4d;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 10px;
+  top: 25px;
+  z-index: 10;
 }
-.rocketListContainer{
- margin-top: 150px;
+
+.rocketListContainer {
+  margin-top: 150px;
 }
+
 .rocketCardContainer {
- display: flex;
- align-items: center;
- flex-direction: row;
- gap: 20px;
- padding: 20px;
- margin: 20px;
- height: fit-content;
- transition: 0.3s;
- font-family: Arial, Helvetica, sans-serif;
- box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
- border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  height: inherit;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
+
 .rocketCardContainer:hover {
- box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .rocketDescription {
@@ -106,12 +79,12 @@ body {
 }
 
 .reserveRocket {
- width: fit-content;
- padding: 8px;
- background-color: blueviolet;
- color: white;
- font-size: 1.2rem;
- border-radius: 10px;
+  width: fit-content;
+  padding: 8px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
 }
 
 .cancelReserve {
@@ -132,15 +105,13 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
- .rocketImg img {
-   object-fit: cover;
-   height: 100%;
-   width: 100%;
- }
- .rocketImg{
-  width: 100%;
- }
- .rocketCardContainer {
-   flex-direction: column;
- }
+  .rocketImg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .rocketImg {
+    width: 100%;
+  }
 }

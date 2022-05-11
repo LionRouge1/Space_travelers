@@ -1,12 +1,12 @@
 .mission_container {
   width: 90%;
-  margin: 50px auto; 
+  margin: 50px auto;
 }
 
 .mission_container table {
   border-collapse: collapse;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-  background-color: #fafafa;  
+  background-color: #fafafa;
 }
 
 th,
@@ -16,7 +16,7 @@ td {
   padding: 10px;
 }
 
-tbody > tr:nth-child(odd) {background-color: #f2f2f2;}
+tbody > tr:nth-child(odd) { background-color: #f2f2f2; }
 
 tr > td:nth-child(2) {
   max-width: 800px;
@@ -42,5 +42,3 @@ td > button {
   border-radius: 2px;
   width: 110px;
 }
-
-
