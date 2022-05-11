@@ -1,7 +1,6 @@
-import local from "../../components/localStore";
-
 const FETCH_MISSION_SUCCEED = 'src/redux/mission/FETCH_MISSION_SUCCEED';
 const JOIN_MISSION = 'src/redux/mission/JOIN_MISSION';
+const DISPLAY_MISSION_JOINED = 'src/redux/mission/DISPLAY_MISSION_JOINED';
 const link = 'https://api.spacexdata.com/v3/missions';
 const initialState = {
   Missions: [],
@@ -15,6 +14,10 @@ export const fetchMissionSuceed = (missions) => ({
 export const joinMission = (id) => ({
   type: JOIN_MISSION,
   id,
+});
+
+export const displayJoined = () => ({
+  type: DISPLAY_MISSION_JOINED,
 });
 
 const missionReducer = (state = initialState, action) => {
@@ -42,6 +45,12 @@ const missionReducer = (state = initialState, action) => {
         ...state,
         Missions:[...newtable],
       }
+    
+    case DISPLAY_MISSION_JOINED:
+      return {
+        ...state,
+        Missions: [ ...state.Missions.filter((mission) => mission.status === true) ],
+      }
 
     default:
       return state;
@@ -50,7 +59,6 @@ const missionReducer = (state = initialState, action) => {
 
 export const fetchMission = () => (
   function (dispatch) {
-    const Lstore = local('missions')
     fetch(link)
       .then((response) => response.json())
       .then((data) => {
@@ -59,7 +67,7 @@ export const fetchMission = () => (
           mission_id,
           mission_name,
           description,
-          status: (Lstore.includes(mission_id)) ? true : false,
+          status: false,
         }));
         dispatch(fetchMissionSuceed(formaData))});
   }

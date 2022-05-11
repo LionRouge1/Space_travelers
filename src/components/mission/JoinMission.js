@@ -1,17 +1,18 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import local from "../localStore";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { displayJoined } from "../../redux/actions/mission";
 
 const JoinMission = () => {
-  const Local = local('missions');
-  const joined = useSelector((state) => state.missions.Missions)
-    .filter((item) => Local.includes(item.mission_id));
-    
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(displayJoined())
+  }, [dispatch]);
+  const joined = useSelector((state) => state.missions.Missions);
   return (
     <div className="joined">
       <ul>
         {
-          joined.map(({mission_id: missionId, mission_name: missionName }) => (
+          joined.map(({mission_id: missionId, mission_name: missionName}) => (
             <li key={missionId}>
               {missionName}
             </li>

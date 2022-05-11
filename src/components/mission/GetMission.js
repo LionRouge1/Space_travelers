@@ -1,7 +1,6 @@
 import {useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchMission, joinMission } from "../../redux/actions/mission";
-import local from "../localStore";
 import InsertMission from "./InsertMission";
 
 const GetMission = () => {
@@ -13,13 +12,6 @@ const GetMission = () => {
   }, [dispatch]);
 
   const handleClick = (e) => {
-    const Local = local('missions', null);
-    if (Local.includes(e.target.id)) {
-      local('missions', Local.filter((x) => x !== e.target.id))
-    } else {
-      local('missions', null, e.target.id);
-    }
-    
     dispatch(joinMission(e.target.id));
   }
   
