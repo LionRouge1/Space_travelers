@@ -159,30 +159,16 @@ body {
  padding-left: 10px;
 }
 
-@media only screen and (max-width: 600px) {
- .rocketImg {
-   width: 25rem;
-   height: auto;
-   display: flex;
-   flex-direction: column;
-   background-color: red;
- }
-
+@media only screen and (max-width: 800px) {
  .rocketImg img {
    object-fit: cover;
    height: 100%;
    width: 100%;
  }
-
+ .rocketImg{
+  width: 100%;
+ }
  .rocketCardContainer {
    flex-direction: column;
-   display: flex;
-   background-color: red;
- }
-}
-
-@media only screen and (max-width: 600px) {
- .btn {
-   width: 7rem;
  }
 }
