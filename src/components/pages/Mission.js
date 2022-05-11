@@ -1,5 +1,5 @@
 import { Component } from "react";
-import GetMission from "../GetMission";
+import GetMission from "../mission/GetMission";
 
 class Mission extends Component {
   constructor(props) {

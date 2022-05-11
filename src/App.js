@@ -5,6 +5,7 @@ import RocketList from './components/rocket/rocketList';
 import Header from './components/header/header';
 import MyProfile from './components/pages/MyProfile';
 import Mission from './components/pages/Mission';
+import { fetchMission } from './redux/actions/mission';
 import { retrieveRockets } from './redux/actions/rocket';
 import { useDispatch } from 'react-redux';
 
@@ -14,7 +15,8 @@ const App = () => {
 
   useEffect(() => {
     dispatch(retrieveRockets());
-  }, []);
+    dispatch(fetchMission())
+  }, [dispatch]);
 
   return (
     <>

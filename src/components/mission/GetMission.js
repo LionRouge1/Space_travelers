@@ -1,15 +1,15 @@
-import {useEffect} from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchMission } from "../redux/actions/mission";
+import { joinMission } from "../../redux/actions/mission";
 import InsertMission from "./InsertMission";
 
 const GetMission = () => {
   const missions  = useSelector((state) => state.missions.Missions);
-
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMission());
-  }, [dispatch])
+
+  const handleClick = (e) => {
+    dispatch(joinMission(e.target.id));
+  }
   
   return (
     <div>
@@ -31,6 +31,7 @@ const GetMission = () => {
                 missionName={mission_name}
                 description={description}
                 status={status}
+                handleClick={handleClick}
               />
             ))
           }
