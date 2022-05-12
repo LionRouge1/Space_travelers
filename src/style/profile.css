@@ -1,17 +1,15 @@
-.reserveRocket,
-.joined ul {
-  width: fit-content;
-  padding: 8px;
-  background-color: blueviolet;
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 10px;
-}
-
 .profile {
   margin-top: 150px;
   display: flex;
   justify-content: space-around;
+}
+
+.reserveRocket,
+.joined ul {
+  width: fit-content;
+  padding: 8px;
+  font-size: 1.2rem;
+  border-radius: 10px;
 }
 
 .reservedRocketContainer,
@@ -20,37 +18,35 @@
   border-radius: 10px;
   height: inherit;
   transition: 0.3s;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.2);
 }
 
-.reservedRocketContainer:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.reservedRocketContainer:hover,
+.joined:hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .heading {
   color: white;
   text-align: center;
   font-size: 1.5rem;
-  padding: 30px 0;
+  padding: 20px 0;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px 10px 0 0;
   background-color: blueviolet;
 }
 
 .reservedRockets,
 .joined ul {
   width: 100%;
-  color: #3d3d3d;
 }
 
 .reservedRockets li,
 .joined li {
   list-style: none;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   font-size: 1.2rem;
-  border-top: gray 1px solid;
 }
 
 .reservedRockets li:nth-child(even),

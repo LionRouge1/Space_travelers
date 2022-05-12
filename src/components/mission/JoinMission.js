@@ -8,6 +8,14 @@ const JoinMission = () => {
     dispatch(displayJoined());
   }, [dispatch]);
   const joined = useSelector((state) => state.missions.Profile);
+  if (joined.length === 0) {
+    return (
+      <div className="joined">
+        <h2 className="heading">Joined Missions</h2>
+        <ul>no missions joined yet</ul>
+      </div>
+    );
+  }
   return (
     <div className="joined">
       <h2 className="heading">Joined Missions</h2>
