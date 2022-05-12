@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Space Travelers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project, we will be working with the real live data from the SpaceX API. Our objective is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- REACT
+- REDUX
+- CSS
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get a local copy up and :
 
-### `npm test`
+- Open your terminal and cd to the folder where you want to put the project and run :
+ ```
+ git clone git@github.com:LionRouge1/Space_travelers.git
+ ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Create-react-app
+- Git/Github
+- VSCode or another equivalent tool
+- Html, Css and Javascript
+- Webpack
+- APIs
+- Jest
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x @babel/preset-env@7.x  @babel/preset-react@7.x
+```
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run tests
 
-### `npm run eject`
+Run the following tests:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- npm start 
+- npm run test
+- npx stylelint "**/*.{css,scss}"
+- npx eslint .
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+👤 **Author 1**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- GitHub: [@ciraganenicole](https://github.com/ciraganenicole)
+- Twitter: [@CiraganeN](https://twitter.com/CiraganeN)
+- LinkedIn: [CiraganeNicole](https://linkedin.com/in/ciraganenicole)
 
-## Learn More
+👤 **Author 2**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@LionRouge1](https://github.com/LionRouge1)
+- Twitter: [@Matchoudi1](https://twitter.com/Matchoudi1)
+- LinkedIn: [CiraganeNicole](https://linkedin.com/in/matchoudi)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to check the [issues page](../../issues/).
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is not licensed.
