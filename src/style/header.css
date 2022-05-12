@@ -1,0 +1,44 @@
+.logo {
+  height: 80px;
+  width: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.116);
+  padding: 0 40px;
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+}
+
+.header > ul {
+  display: flex;
+  width: 40%;
+  gap: 10px;
+  align-items: center;
+}
+
+.header li {
+  list-style: none;
+  width: 120px;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(14, 76, 105);
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid rgb(14, 76, 105);
+  padding: 10px;
+}

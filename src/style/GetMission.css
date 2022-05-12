@@ -1,0 +1,44 @@
+.mission_container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.mission_container table {
+  border-collapse: collapse;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+}
+
+th,
+tr,
+td {
+  border: 2px solid var(--grey-bd);
+  padding: 10px;
+}
+
+tbody > tr:nth-child(odd) { background-color: #f2f2f2; }
+
+tr > td:nth-child(2) {
+  max-width: 800px;
+}
+
+tr > td:nth-child(4) {
+  min-width: 110px;
+}
+
+td > span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  width: 130px;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+td > button {
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 6px;
+  width: 115px;
+}
