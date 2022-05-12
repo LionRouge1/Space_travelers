@@ -8,22 +8,22 @@ const InsertMission = ({
   handleClick,
 }) => {
   const member = {
-    backgroundColor: 'green',
+    backgroundColor: '#18a2b8',
     color: 'white',
   };
   const notMenber = {
-    backgroundColor: '#ccc',
+    backgroundColor: '#6d757d',
     color: 'white',
   };
   const Bmember = {
-    backgroundColor: 'none',
-    border: '1px solid red',
-    color: 'red',
+    backgroundColor: 'transparent',
+    border: '1px solid #dc3645',
+    color: '#dc3645',
   };
   const BnotMenber = {
-    backgroundColor: 'none',
-    border: '1px solid #ccc',
-    color: '#ccc',
+    backgroundColor: 'transparent',
+    border: '1px solid #6d757d',
+    color: '#343a40',
   };
   return (
     <tr>

@@ -31,14 +31,14 @@ td > span {
   text-align: center;
   font-weight: bold;
   padding: 5px;
-  width: 120px;
-  font-size: 11px;
-  border-radius: 2px;
+  width: 130px;
+  font-size: 15px;
+  border-radius: 6px;
 }
 
 td > button {
   padding: 8px;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 110px;
+  font-size: 15px;
+  border-radius: 6px;
+  width: 115px;
 }
