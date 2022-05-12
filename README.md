@@ -61,7 +61,7 @@ Run the following tests:
 
 - GitHub: [@LionRouge1](https://github.com/LionRouge1)
 - Twitter: [@Matchoudi1](https://twitter.com/Matchoudi1)
-- LinkedIn: [CiraganeNicole](https://linkedin.com/in/matchoudi)
+- LinkedIn: [matchoudi](https://linkedin.com/in/matchoudi)
 
 ## 🤝 Contributing
 
